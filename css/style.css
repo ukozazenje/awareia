@@ -1363,10 +1363,6 @@ margin-left: 20px;
 
 #contact {
     background-color: #354052;
-    /* background-image: -webkit-gradient(linear, left top, right top, from(#333a40), color-stop(#323a40), to(#333a40));
-    background-image: -webkit-linear-gradient(left, #333a40, #323a40, #333a40);
-    background-image: -o-linear-gradient(left, #333a40, #323a40, #333a40);
-    background-image: linear-gradient(to right, #333a40, #323a40, #333a40); */
     color: #fff;
     position: relative
 }
@@ -1374,7 +1370,23 @@ margin-left: 20px;
 #contact .contact-us-title h2 {
     color: #fff
 }
-
+#contact .contact-heading {
+    font-size: 24px;
+}
+#contact .contact-subheading {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.contact-text {
+    text-align: justify;
+}
+.denso-logo {
+    padding: 5px 5px 5px 0;
+    width: 200px;
+    float: left;
+}
 .form-control {
     width: 100%;
     margin-bottom: 10px;
@@ -1474,26 +1486,50 @@ footer {
         width: 100%
     }
 }
-
+@media (min-width: 1201px) and (max-width: 1400px){
+    .sticker-1,
+    .sticker-2,
+    .sticker-3,
+    .sticker-4 {
+        top: 40px;
+        width: 500px;
+        left: 50%;
+        margin-left: -250px
+    }
+    .sticker-3 {
+        top: 50px;
+        width: 330px;
+        margin-left: -540px;
+    }
+    .sticker-1 {
+        top: 50px;
+        width: 520px;
+        margin-left: -500px
+    }
+}
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
     #features .box-item .text h4 {
         line-height: 25px
     }
-    .slider-bg {
-        /* height: 350px */
-    }
     .sticker-1,
     .sticker-2,
     .sticker-3,
     .sticker-4 {
-        width: 400px;
+        top: 40px;
+        width: 500px;
         left: 50%;
-        margin-left: -200px
+        margin-left: -250px
     }
     .sticker-3 {
-        width: 200px;
-        margin-left: -150px;
+        top: 30px;
+        width: 300px;
+        margin-left: -450px;
+    }
+    .sticker-1 {
+        top: 40px;
+        width: 420px;
+        margin-left: -400px
     }
 }
 
@@ -1501,13 +1537,11 @@ footer {
     #hero-area .contents h1 {
         font-size: 28px
     }
-    .slider-bg {
-        /* height: 200px */
-    }
     .sticker-1,
     .sticker-2,
     .sticker-3,
     .sticker-4 {
+        top: 40px;
         width: 400px;
         left: 50%;
         margin-left: -200px
@@ -1516,6 +1550,11 @@ footer {
         top: 20px;
         width: 200px;
         margin-left: -300px;
+    }
+    .sticker-1 {
+        top: 20px;
+        width: 350px;
+        margin-left: -250px
     }
     .item-boxes h4 {
         font-size: 18px
@@ -1543,29 +1582,6 @@ footer {
         line-height: 20px
     }
 }
-
-
-/* @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : landscape) { 
-  .slider-bg {
-    height: 200px;
-  }
-  .sticker-1,
-  .sticker-2,
-  .sticker-3,
-  .sticker-4 {
-      width: 400px;
-      left: 50%;
-      margin-left: -200px
-  }
-  .sticker-3 {
-      width: 300px;
-      margin-left: -150px;
-  }
-} */
-
 
 @media (max-width: 767px) {
     .slider-bg {
@@ -1634,6 +1650,10 @@ and (orientation : landscape) {
     .contact-us h3 {
         font-size: 28px
     }
+
+    .contact-text {
+        padding-bottom: 40px;
+    }
     .footer-links li a {
         margin-right: 10px
     }
@@ -1642,34 +1662,9 @@ and (orientation : landscape) {
     }
 }
 
-@media(max-width: 576px) {
-    .slider-bg {
-        /* height: 350px */
-    }
-}
-
-/* @media (min-width : 320px) and (max-width : 812px) and (orientation : landscape) { 
-  .slider-bg {
-    height: 200px;
-  }
-  .sticker-1,
-  .sticker-2,
-  .sticker-3,
-  .sticker-4 {
-      top: 20px;
-      width: 300px;
-      left: 50%;
-      margin-left: -200px
-  }
-  .sticker-3 {
-      width: 160px;
-      margin-left: -200px;
-  }
-} */
-
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 812px)
+and (max-device-width : 767px)
 and (orientation : landscape) { 
   .sticker-1,
   .sticker-2,
@@ -1685,5 +1680,53 @@ and (orientation : landscape) {
       margin-left: -250px;
       top: 20px;
   }
+  .sticker-1 {
+    margin-left: -200px
+  }
 
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 991px)
+and (orientation : landscape){
+    .sticker-1,
+    .sticker-2,
+    .sticker-3,
+    .sticker-4 {
+        top: 20px;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px
+    }
+    .sticker-3 {
+        width: 180px;
+        margin-left: -300px;
+        top: 20px;
+    }
+    .sticker-1 {
+      margin-left: -250px
+    }
+}
+
+@media only screen 
+and (min-device-width : 992px) 
+and (max-device-width : 1200px)
+and (orientation : landscape){
+    .sticker-1,
+    .sticker-2,
+    .sticker-3,
+    .sticker-4 {
+        top: 20px;
+        width: 400px;
+        left: 50%;
+        margin-left: -200px
+    }
+    .sticker-3 {
+        width: 220px;
+        margin-left: -450px;
+        top: 20px;
+    }
+    .sticker-1 {
+      margin-left: -350px
+    }
 }
