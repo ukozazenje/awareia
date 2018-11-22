@@ -1480,6 +1480,9 @@ footer {
     #features .box-item .text h4 {
         line-height: 25px
     }
+    .slider-bg {
+        /* height: 350px */
+    }
     .sticker-1,
     .sticker-2,
     .sticker-3,
@@ -1489,7 +1492,7 @@ footer {
         margin-left: -200px
     }
     .sticker-3 {
-        width: 300px;
+        width: 200px;
         margin-left: -150px;
     }
 }
@@ -1499,7 +1502,7 @@ footer {
         font-size: 28px
     }
     .slider-bg {
-        height: 400px
+        /* height: 200px */
     }
     .sticker-1,
     .sticker-2,
@@ -1510,8 +1513,9 @@ footer {
         margin-left: -200px
     }
     .sticker-3 {
-        width: 300px;
-        margin-left: -150px;
+        top: 20px;
+        width: 200px;
+        margin-left: -300px;
     }
     .item-boxes h4 {
         font-size: 18px
@@ -1539,31 +1543,9 @@ footer {
         line-height: 20px
     }
 }
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) { 
 
-  .slider-bg {
-    height: 200px;
-  }
-  .sticker-1,
-  .sticker-2,
-  .sticker-3,
-  .sticker-4 {
-      width: 400px;
-      left: 50%;
-      margin-left: -200px
-  }
-  .sticker-3 {
-      width: 300px;
-      margin-left: -150px;
-  }
 
-}
-
-@media only screen 
+/* @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) 
 and (orientation : landscape) { 
@@ -1582,12 +1564,12 @@ and (orientation : landscape) {
       width: 300px;
       margin-left: -150px;
   }
-}
+} */
 
 
 @media (max-width: 767px) {
     .slider-bg {
-        height: 300px
+        /* height: 300px */
     }
     .sticker-1,
     .sticker-2,
@@ -1599,7 +1581,7 @@ and (orientation : landscape) {
     }
     .sticker-3 {
         top: 40px;
-        width: 250px
+        width: 240px
     }
     .section-header .section-title {
         font-size: 20px
@@ -1662,11 +1644,11 @@ and (orientation : landscape) {
 
 @media(max-width: 576px) {
     .slider-bg {
-        height: 350px
+        /* height: 350px */
     }
 }
 
-@media (min-width : 320px) and (max-width : 1024px) and (orientation : landscape) { 
+/* @media (min-width : 320px) and (max-width : 812px) and (orientation : landscape) { 
   .slider-bg {
     height: 200px;
   }
@@ -1683,4 +1665,25 @@ and (orientation : landscape) {
       width: 160px;
       margin-left: -200px;
   }
+} */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (orientation : landscape) { 
+  .sticker-1,
+  .sticker-2,
+  .sticker-3,
+  .sticker-4 {
+      top: 20px;
+      width: 300px;
+      left: 50%;
+      margin-left: -150px
+  }
+  .sticker-3 {
+      width: 180px;
+      margin-left: -250px;
+      top: 20px;
+  }
+
 }
